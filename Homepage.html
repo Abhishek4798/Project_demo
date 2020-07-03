@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>HomePage</title>
+<link rel="stylesheet" href="styl.css">
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="text">LOGIN</div>
+          <form method="POST" action="page2.html" onsubmit="return clickevent()">
+           
+            <div class="data">
+              <label>Email</label>
+              <input type="text" required id="email" name="email" placeholder="Enter any valid mail">
+            </div>
+            
+            <div class="data">
+              <label>Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter any valid password" required   >
+              <div id="error" name="error">error</div>
+            </div>
+            
+            <div class="btn">
+              <button  type="submit">login</button>
+            </div>
+        </form>
+        <div id="message">
+  <h3>Password must contain:</h3>
+  <p id="letter" class="invalid">A lowercase letter</p>
+  <p id="capital" class="invalid">A uppercase letter</p>
+  <p id="number" class="invalid">A number</p>
+  <p id="special" class="invalid">A Special character</p>
+  <p id="length" class="invalid">Length should be greater than 8</p>
+</div>
+  </div>
+  
+</body>
+
+<script type="text/javascript" src="home.js"></script>
+
+
+
+</html>
